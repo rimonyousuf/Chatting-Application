@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
-import './Register.css'
-import useDate from '../../../hooks/useDate';
+import './Register.css';
+import useDate from '../../hooks/useDate';
 
 const Register = () => {
 
@@ -10,7 +10,7 @@ const Register = () => {
         <>
             <div className='background'>
                 <div className="hero-content w-full m-auto lg:flex">
-                    <div className="card w-1/2 max-w-sm py-8 shadow-2xl bg-base-100">
+                    <div className="card w-1/2 bg-sky-50 max-w-sm py-8 shadow-2xl bg-base-100">
                         <h2 className="text-4xl text-center font-bold mt-3">Sign Up</h2>
                         <form className="card-body">
                             <div className="form-control">
@@ -33,7 +33,7 @@ const Register = () => {
                             </div>
                             <div>
                                 <label className="label">
-                                    <span className="label-text">Birthday</span>
+                                    <span className="label-text" required>Birthday</span>
                                 </label>
                                 {datePicker}
                             </div>
