@@ -1,6 +1,7 @@
 import { Box, Button, TextField } from "@mui/material";
 import MoreVertIcon from '@mui/icons-material/MoreVert';
 import InsertEmoticonIcon from '@mui/icons-material/InsertEmoticon';
+import SendIcon from '@mui/icons-material/Send';
 
 const ChatBoxFooter = () => {
     return (
@@ -28,9 +29,10 @@ const ChatBoxFooter = () => {
                 />
                 <Button
                     variant="outlined"
-                    sx={{ borderRadius: "0", minWidth: "auto", height: "100%" }}
+                    sx={{ borderRadius: "0", minWidth: "auto", height: "100%", gap:"10px" }}
                 >
                     SEND
+                    <SendIcon />
                 </Button>
             </Box>
         </Box>
